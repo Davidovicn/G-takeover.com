@@ -1,0 +1,16 @@
+CREATE TABLE `builder` (
+  `id` int(4) NOT NULL auto_increment,
+  `nick` varchar(15) NOT NULL default '',
+  `pass` varchar(30) NOT NULL default '',
+  `ime` varchar(15) NOT NULL default '',
+  `prez` text,
+  `mob` text,
+  `sajt` varchar(50) NOT NULL default '',
+  `mail` varchar(30) NOT NULL default '',
+  `rtime` varchar(30) NOT NULL default '',
+  `ip` text,
+  `soft` text,
+  `reg_pass` varchar(1) NOT NULL default '',
+  PRIMARY KEY  (`id`),
+  UNIQUE KEY `nick` (`nick`)
+) TYPE=MyISAM AUTO_INCREMENT=1 ;
